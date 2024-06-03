@@ -81,8 +81,8 @@ for (i in 1:10) {
   print(paste("CV ke: ", i, "n: 50"))
   print(rf_model$confusion)
   print(paste("Akurasi      : ", acc))
-  print(paste("Spesifisitas : "))
-  print(paste("Sensitifitas : "))
+  print(paste("Spesifisitas : ", spe))
+  print(paste("Sensitifitas : ", sen))
   
   
   rf_model <-
@@ -121,8 +121,8 @@ for (i in 1:10) {
   print(paste("CV ke: ", i, "n: 100"))
   print(rf_model$confusion)
   print(paste("Akurasi      : ", acc))
-  print(paste("Spesifisitas : "))
-  print(paste("Sensitifitas : "))
+  print(paste("Spesifisitas : ", spe))
+  print(paste("Sensitifitas : ", sen))
 }
 
 rf_model$importance
